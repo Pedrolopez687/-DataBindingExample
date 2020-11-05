@@ -19,9 +19,9 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Label Grid.Row="0" Grid.Column="0" Content="Nombre:" HorizontalAlignment="Right"></Label>
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="2" x:Name="txtbxnombre"></TextBox>
+                <TextBox Text="{Binding Title}" Grid.Row="0" Grid.Column="1" Margin="2" x:Name="txtbxnombre"></TextBox>
             <Label Grid.Row="1" Grid.Column="0" Content="Fecha:" HorizontalAlignment="Right"></Label>
-            <DatePicker Grid.Row="1" Grid.Column="1" Margin="2" x:Name="datepickfecha"></DatePicker>
+             <DatePicker SelectedDate="{Binding Date}" Grid.Row="1" Grid.Column="1" Margin="2" x:Name="datepickfecha"></DatePicker>
             </Grid>
         </GroupBox>
                 <Button Click="btnmodificar_Click" Content="Modificar evento" x:Name="btnmodificar" HorizontalAlignment="Center" Margin="6"></Button>

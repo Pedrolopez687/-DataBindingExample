@@ -31,6 +31,8 @@ namespace DataBindingExample
             };
             txtbxnombre.Text = evento.Title;
             datepickfecha.SelectedDate = evento.Date;
+            DataContext = evento;
+
 
         }
 
